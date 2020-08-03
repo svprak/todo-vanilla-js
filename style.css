@@ -5,10 +5,45 @@
   font-family: verdana;
 }
 
+
 .done {
   text-decoration: line-through;
   color: rgba(16, 102, 5, 0.514);
-  background-color: rgba(20, 167, 39, 0.699);
+  animation-direction: normal;
+  animation-name: bgc;
+  animation-duration: 3s;
+}
+
+@keyframes bgc {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .todo-list {

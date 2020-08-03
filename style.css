@@ -5,6 +5,12 @@
   font-family: verdana;
 }
 
+.done {
+  text-decoration: line-through;
+  color: rgba(16, 102, 5, 0.514);
+  background-color: rgba(20, 167, 39, 0.699);
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -14,29 +20,37 @@
   padding: 3px;
   margin-top: 50px;
   background-color: #ec9c4b;
-  width: 50%;
-  box-shadow: 3px 3px red, 6px 6px green, 9px 9px orange, 12px 12px yellow;
+  width: 30%;
+  box-shadow: 3px 3px #FFA851,
+    6px 6px #FFBB77,
+    9px 9px #FECE9E,
+    12px 12px #FFE1C4;
 }
+
 .title {
   background: #567;
   width: 100%;
   padding: 5px 0 5px 5px;
   color: white;
 }
+
 .title h2 {
   font-size: 1em;
 }
+
 .title p {
   font-size: 0.7em;
   margin-top: 5px;
   text-transform: lowercase;
 }
+
 .list-group {
   background: rgba(225, 229, 233, 0.411);
   width: 100%;
   margin: 1px 0;
   padding-left: 5px;
 }
+
 .add-todo {
   background-color: #567;
   width: 100%;
@@ -44,22 +58,42 @@
   padding: 10px 10px;
   text-align: center;
 }
+
 .add-todo input,
 .add-todo button {
   padding: 5px;
   border-radius: 2px;
   border: none;
 }
+
 ul {
   list-style: none;
 }
+
 li {
   margin-bottom: 5px;
   border-bottom: 1px solid #ec9c4b;
   padding-bottom: 3px;
   color: #fff;
+  text-transform: capitalize;
 }
-ul > li:nth-last-child(1) {
+
+li:hover {
+  cursor: pointer;
+}
+
+ul>li:nth-last-child(1) {
   padding-bottom: 1px;
   border-bottom: none;
+}
+
+.btn-add {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-add:hover {
+  background-color: #ec9c4b;
+  color: white;
 }
